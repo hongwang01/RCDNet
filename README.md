@@ -63,10 +63,15 @@ $ python main.py  --save RCDNet_syn --model RCDNet --scale 2 --epochs 100 --batc
 
 ### For SPA-Data
 1. Download the training set from [[SPANet]](_https://stevewongv.github.io/derain-project.html) and testing set from the  [[NetDisk]]() and put them into the folder "../RCDNet_code/for_spa/data",  then the content is just like:
+
 "./for_spa/data/real_world"
+
 "./for_spa/data/real_world_gt"
+
 "./for_spa/data/real_world.txt"
+
  "./for_spa/data/test/small/rain/\*.png"
+ 
 "./for_spa/data/test/small/norain/\*.png"
 
 **Note that:  download the training set  from [[SPANet]](https://stevewongv.github.io/derain-project.html) ,  which includes three files: "real_world"， "real_world_gt", and "real_world.txt"*
