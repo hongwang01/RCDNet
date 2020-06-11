@@ -1,7 +1,7 @@
 ﻿# RCDNet: A Model-driven Deep Neural Network  for Single Image Rain Removal (CVPR2020)
 [Hong Wang](https://hongwang01.github.io/), Qi Xie, Qian Zhao, and [Deyu Meng](http://gr.xjtu.edu.cn/web/dymeng)  
 
-[[PDF]](http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_A_Model-Driven_Deep_Neural_Network_for_Single_Image_Rain_Removal_CVPR_2020_paper.pdf) [[Supplementray Materail]]()
+[[PDF]](http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_A_Model-Driven_Deep_Neural_Network_for_Single_Image_Rain_Removal_CVPR_2020_paper.pdf) [[Supplementray Materail]](https://pan.baidu.com/s/1IU5hT8Vjcyf8wNYuQD5rPw)(pwd:e2xo)
 
 ## Abstract
 Deep learning (DL) methods have achieved state-of-the-art performance in the task of single image rain removal. Most of current DL architectures, however, are still lack of sufficient interpretability and not fully integrated with physical structures inside general rain streaks. To this issue, in this paper, we propose a model-driven deep neural network for the task, with fully interpretable network structures. Specifically, based on the convolutional dictionary learning mechanism for representing rain, we propose a novel single image deraining model and utilize the proximal gradient descent technique to design an iterative algorithm only containing simple operators for solving the model. Such a simple implementation scheme facilitates us to unfold it into a new deep network architecture, called rain convolutional dictionary network (RCDNet), with almost every network module one-to-one corresponding to each operation involved in the algorithm. By end-to-end training the proposed RCDNet, all the rain kernels and proximal operators can be automatically extracted, faithfully characterizing the features of both rain and clean background layers, and thus naturally lead to its better deraining performance, especially in real scenarios. Comprehensive experiments substantiate the superiority of the proposed network, especially its well generality to diverse testing scenarios and good interpretability for all its modules, as compared with state-of-the-arts both visually and quantitatively.
@@ -100,7 +100,7 @@ $ python main.py --data_test RainHeavyTest  --ext img --scale 2  --data_range 1-
 See folder "Pretrained_model" 
 
 ## Derained Results
-If needed, please download from  [[NetDisk]]()
+If needed, please download from  [[NetDisk]](https://pan.baidu.com/s/1IU5hT8Vjcyf8wNYuQD5rPw)(pwd:e2xo)
 
 ## Performance Evaluation
 
