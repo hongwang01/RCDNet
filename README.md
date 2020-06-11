@@ -39,15 +39,19 @@ year = {2020}
 ### Internet-Data
 * 147 unlabeled rainy images from SIRR
 
-**More detailed explantions refer to [ the single image part in the survey ](https://github.com/hongwang01/Video-and-Single-Image-Deraining)*
+**More detailed explantions refer to [the single image part in the Survey](https://github.com/hongwang01/Video-and-Single-Image-Deraining)*
 
 ## Training
 ###  For Synthetic Dataset 
-*taking training Rain100L as an example**:
+*taking training Rain100L as an example*:
 1. Download Rain100L  (including training set and testing set) from the  [[NetDisk]]() and put them into the folder "./RCDNet_code/for_syn/data",  then the content is just like:
+
 "./for_syn/data/train/small/rain/\*.png"
+
 "./for_syn/data/train/small/norain/\*.png"
+
  "./for_syn/data/test/small/rain/\*.png"
+ 
 "./for_syn/data/test/small/norain/\*.png"
 
 2.  Begining training:
