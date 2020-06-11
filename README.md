@@ -111,7 +111,7 @@ Code borrws from [JORDER_E](https://github.com/flyywh/JORDER-E-Deep-Image-Derain
 
 ## Friendly Tips
 1. If higher version is needed, I'm very glad to share with you the RCDNet code running on PyTorch>=1.0
-2. More general and friend code framework for RCDNet will be coming !
+2. More general and friendly code framework for RCDNet will be coming !
 
 
 ## Contact
