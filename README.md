@@ -20,7 +20,7 @@ year = {2020}
 
 * Linux Platform
 * NVIDIA GPU + CUDA CuDNN (CUDA 10.0)
-* PyTorch == 0.4.1 (1.0.x and higher version needs revise the dataloader.py in folder./RCDNet_code/src/)
+* PyTorch == 0.4.1 (1.0.x and higher version needs revise the dataloader.py in folder "./RCDNet_code/src/")
 * Python3.6
 * imageio2.5
 * numpy1.14
@@ -106,9 +106,13 @@ If needed, please download from  [[NetDisk]]()
 
 All PSNR and SSIM results are computed by using  this [Matlab code](https://github.com/hongwang01/RCDNet/tree/master/Performance_evaluation), based on Y channal.
 
-
 ## Acknowledgement 
 Code borrws from [JORDER_E](https://github.com/flyywh/JORDER-E-Deep-Image-Deraining-TPAMI-2019-Journal) by [Wenhan Yang](https://github.com/flyywh). Thanks for sharing !
+
+## Friendly Tips
+1. If higher version is needed, I'm very glad to share with you the RCDNet code running on PyTorch>=1.0
+2. More general and friend code framework for RCDNet will be coming !
+
 
 ## Contact
 If you have any question, please feel free to concat Hong Wang (Email: hongwang01@stu.xjtu.edu.cn)
