@@ -37,7 +37,8 @@ year = {2020}
 ### SPA-Data
 * 638492 training pairs and 1000 testing pairs
 ### Internet-Data
-* 147 unlabeled rainy images from SIRR
+* 147 unlabeled rainy images from [SIRR]
+(https://github.com/wwzjer/Semi-supervised-IRR/tree/master/data/rainy_image_dataset/real_input)
 
 **More detailed explantions refer to [the single image part in the Survey](https://github.com/hongwang01/Video-and-Single-Image-Deraining)*
 
@@ -99,7 +100,7 @@ If needed, please download from  [[NetDisk]]()
 
 ## Performance Evaluation
 
-All PSNR and SSIM results are computed by using  this [Matlab code](https://github.com/hongwang01/RCDNet), based on Y channal.
+All PSNR and SSIM results are computed by using  this [Matlab code(https://github.com/hongwang01/RCDNet/tree/master/Performance_evaluation), based on Y channal.
 
 
 ## Acknowledgement 
