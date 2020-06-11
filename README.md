@@ -84,7 +84,7 @@ $ python main.py  --save RCDNet_spa --model RCDNet --scale 2 --epochs 100 --batc
 ```
 
 ## Testing
-### For synthetic dataset
+### For Synthetic Dataset
 ```
 $ cd ./RCDNet_code/for_syn/src/
 $ python main.py --data_test RainHeavyTest  --ext img --scale 2  --data_range 1-200/1-100 --pre_train ../experiment/RCDNet_syn/model/model_best.pt --model RCDNet --test_only --save_results --save RCDNet_test
