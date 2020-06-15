@@ -107,7 +107,7 @@ If needed, please download from  [[NetDisk]](https://pan.baidu.com/s/1IU5hT8Vjcy
 All PSNR and SSIM results are computed by using  this [Matlab code](https://github.com/hongwang01/RCDNet/tree/master/Performance_evaluation), based on Y channal.
 
 ## Acknowledgement 
-Code borrws from [JORDER_E](https://github.com/flyywh/JORDER-E-Deep-Image-Deraining-TPAMI-2019-Journal) by [Wenhan Yang](https://github.com/flyywh). Thanks for sharing !
+Code borrows from [JORDER_E](https://github.com/flyywh/JORDER-E-Deep-Image-Deraining-TPAMI-2019-Journal) by [Wenhan Yang](https://github.com/flyywh). Thanks for sharing !
 
 ## Friendly Tips
 1. If higher version is needed, I'm very glad to share with you the RCDNet code running on PyTorch>=1.0
