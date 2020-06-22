@@ -1,4 +1,4 @@
-﻿#RCDNet: A Model-driven Deep Neural Network  for Single Image Rain Removal (CVPR2020)
+# RCDNet: A Model-driven Deep Neural Network  for Single Image Rain Removal (CVPR2020)
  
 [Hong Wang](https://hongwang01.github.io/), Qi Xie, Qian Zhao, and [Deyu Meng](http://gr.xjtu.edu.cn/web/dymeng)  
 
