@@ -125,7 +125,7 @@ Code borrows from [JORDER_E](https://github.com/flyywh/JORDER-E-Deep-Image-Derai
 
 2020.6.10   Release code
 
-2020.6.22   Fix the bug in the folder "../src/model/rcdnet/", change the training command, and also release higher version with the folder "./pytorch1.0+"
+2020.6.22   Fix the bug in the file "../src/model/rcdnet/", change the training command, and also release higher version with the folder "./pytorch1.0+"
 
 ## Contact
 If you have any question, please feel free to concat Hong Wang (Email: hongwang01@stu.xjtu.edu.cn)
