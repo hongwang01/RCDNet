@@ -103,14 +103,12 @@ The derained results are saved in the folder "./for_spa/experiment/RCDNet_test/r
 ## Pretrained Model
 See folder "Pretrained_model" 
 
-## Derained Results
-If needed, please download from  [[NetDisk]](https://pan.baidu.com/s/1IU5hT8Vjcyf8wNYuQD5rPw)(pwd:e2xo) 
-
 1) *for synthetic model*:  put the pretrained model into the folder "./for_syn/experiment/RCDNet_syn/model/",  and then the content is just like: "../for_syn/experiment/RCDNet_syn/model/model_best.pt"
 
 2) *for spa mode*l:  put the pretrained model into the folder "./for_spa/experiment/RCDNet_spa/model/",  and then the content is just like: "../for_spa/experiment/RCDNet_spa/model/model_best.pt"
 
-
+## Derained Results
+If needed, please download from  [[NetDisk]](https://pan.baidu.com/s/1IU5hT8Vjcyf8wNYuQD5rPw)(pwd:e2xo) 
 
 ## Performance Evaluation
 
