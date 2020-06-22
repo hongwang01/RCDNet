@@ -1,4 +1,5 @@
 ﻿#RCDNet: A Model-driven Deep Neural Network  for Single Image Rain Removal (CVPR2020)
+ 
 [Hong Wang](https://hongwang01.github.io/), Qi Xie, Qian Zhao, and [Deyu Meng](http://gr.xjtu.edu.cn/web/dymeng)  
 
 [[PDF]](http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_A_Model-Driven_Deep_Neural_Network_for_Single_Image_Rain_Removal_CVPR_2020_paper.pdf) [[Supplementary Material]](http://openaccess.thecvf.com/content_CVPR_2020/supplemental/Wang_A_Model-Driven_Deep_CVPR_2020_supplemental.pdf)
@@ -91,7 +92,7 @@ $ python main.py --data_test RainHeavyTest  --ext img --scale 2  --data_range 1-
 ```
 **Note that: --data_range  1-#training pairs/1-#testing pairs. The command (-- data_range 1-200/1-100) above is set based on Rain100L (200 training paris and 100 testing pairs).*
 
-The derained results are saved in the folder "./for_syn/experiment/RCDNet_test/results/", where the image name "norain-*LR.png"  , "norain-*HR.png" , "norain-*SR.png" means rainy image, groundtruth,  and restored background, respectively. 
+The derained results are saved in the folder "./for_syn/experiment/RCDNet_test/results/", where the image name "norain-*LR.png", "norain-*HR.png" , "norain-*SR.png" means rainy image, groundtruth, and restored background, respectively. 
 
 ### For SPA-Data
 ```
@@ -123,7 +124,9 @@ Code borrows from [JORDER_E](https://github.com/flyywh/JORDER-E-Deep-Image-Derai
 2. More general and friendly code framework for RCDNet will be coming !
 
 ## Updating logs
+
 2020.6.10   Release code
+
 2020.6.22   Fix the bug in the folder "../src/model/rcdnet/" and also release higher version with the folder "./pytorch1.0+"
 
 ## Contact
