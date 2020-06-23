@@ -21,7 +21,7 @@ year = {2020}
 
 * Linux Platform
 * NVIDIA GPU + CUDA CuDNN (CUDA 10.0)
-* PyTorch == 0.4.1 (1.0.x and higher version needs revise the dataloader.py in folder "../src/", refer to "Friendly Tips" for details)
+* PyTorch == 0.4.1 (1.0.x and higher version need revise the dataloader.py in folder "../src/", refer to "Friendly Tips" for details)
 * Python3.6
 * imageio2.5
 * numpy1.14
@@ -40,7 +40,7 @@ year = {2020}
 ### Internet-Data
 * 147 unlabeled rainy images from [SIRR](https://github.com/wwzjer/Semi-supervised-IRR/tree/master/data/rainy_image_dataset/real_input)
 
-**More detailed explantions refer to [the single image part in the Survey](https://github.com/hongwang01/Video-and-Single-Image-Deraining)*
+**More detailed explanations refer to [the single image part in the Survey](https://github.com/hongwang01/Video-and-Single-Image-Deraining)*
 
 ## Training
 ###  For Synthetic Dataset 
@@ -112,7 +112,7 @@ If needed, please download from  [[NetDisk]](https://pan.baidu.com/s/1IU5hT8Vjcy
 
 ## Performance Evaluation
 
-All PSNR and SSIM results are computed by using  this [Matlab code](https://github.com/hongwang01/RCDNet/tree/master/Performance_evaluation), based on Y channal.
+All PSNR and SSIM results are computed by using  this [Matlab code](https://github.com/hongwang01/RCDNet/tree/master/Performance_evaluation), based on Y channel of YCbCr space.
 
 ## Acknowledgement 
 Code borrows from [JORDER_E](https://github.com/flyywh/JORDER-E-Deep-Image-Deraining-TPAMI-2019-Journal) by [Wenhan Yang](https://github.com/flyywh). Thanks for sharing !
