@@ -63,7 +63,7 @@ $ python main.py  --save RCDNet_syn --model RCDNet --scale 2 --epochs 100 --batc
 **Note that: --data_range 1-#training pairs/1-#testing pairs.  The command above is set based on Rain100L (200 training paris and 100 testing pairs).*
 
 ### For SPA-Data
-1. Download the training set from [[SPANet]](_https://stevewongv.github.io/derain-project.html) and testing set from the  [[NetDisk]](https://pan.baidu.com/s/1yV4ih7C4Xg0iazqSBB-U1Q) (pwd:uz8h) and put them into the folder "./RCDNet_code/for_spa/data",  then the content is just like:
+1. Download the training set from [[SPANet]](https://stevewongv.github.io/derain-project.html) and testing set from the  [[NetDisk]](https://pan.baidu.com/s/1yV4ih7C4Xg0iazqSBB-U1Q) (pwd:uz8h) and put them into the folder "./RCDNet_code/for_spa/data",  then the content is just like:
 
 "./for_spa/data/real_world"
 
