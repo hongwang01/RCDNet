@@ -127,5 +127,7 @@ Code borrows from [JORDER_E](https://github.com/flyywh/JORDER-E-Deep-Image-Derai
 
 2020.6.22   Fix the bug in the file "../src/model/rcdnet.py", change the training command, and also release higher version with the folder "./pytorch1.0+"
 
+2020.6.28   Fix the bug in the file "init_rain_kernel.m"
+
 ## Contact
 If you have any question, please feel free to concat Hong Wang (Email: hongwang01@stu.xjtu.edu.cn)
