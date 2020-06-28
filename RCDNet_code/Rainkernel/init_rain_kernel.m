@@ -21,5 +21,5 @@ num1 = 12;
         pause(0.1)
     end
 C = bsxfun(@times, permute(C,[4,1,2,3]),ones([3,1]));
-C = squeeze(C(:,:,:,:));
+C9 = squeeze(C(:,:,:,:));
 save('init_kernel','C9');  % 9 means the rain kernel size 9*9
