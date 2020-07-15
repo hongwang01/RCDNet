@@ -113,6 +113,8 @@ See folder "Pretrained_model"
 
 ## Derained Results
 If needed, please download from  [[NetDisk]](https://pan.baidu.com/s/1IU5hT8Vjcyf8wNYuQD5rPw)(pwd:e2xo) 
+## Comparison Demo on Rain100L
+![Rain100l](https://github.com/hongwang01/RCDNet/blob/master/Rain100l.png)
 
 ## Performance Evaluation
 
