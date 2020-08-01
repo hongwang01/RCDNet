@@ -26,12 +26,17 @@ year = {2020}
 * Linux Platform
 * NVIDIA GPU + CUDA CuDNN (CUDA 10.0)
 * PyTorch == 0.4.1 (1.0.x and higher version need revise the dataloader.py in folder "../src/", refer to "Friendly Tips" for details)
-* Python3.6
-* imageio2.5
-* numpy1.14
+* torchvision0.2.0
+* Python3.6.0
+* imageio2.5.0
+* numpy1.14.0
 * opencv-python
 * scikit-image0.13.0
 * tqdm4.32.2
+* scipy1.2.1
+* matplotlib3.1.1
+* ipython7.6.1
+* h5py2.10.0
 
 ## Dataset Descriptions 
 ### Synthetic datasets
@@ -124,7 +129,7 @@ All PSNR and SSIM results are computed by using  this [Matlab code](https://gith
 Code borrows from [JORDER_E](https://github.com/flyywh/JORDER-E-Deep-Image-Deraining-TPAMI-2019-Journal) by [Wenhan Yang](https://github.com/flyywh). Thanks for sharing !
 
 ## Friendly Tips
-1. If higher version is needed, please replace the files "dataloader.py"  and "trainer.py" in the folder "./RCDNet_code/../src/" with the  corresponding ones in  the folder "./pytorch1.0+/../src/" .
+1. If higher pytorch version (1.0.x, 1.1.x) is needed, please replace the files "dataloader.py"  and "trainer.py" in the folder "./RCDNet_code/../src/" with the  corresponding ones in  the folder "./pytorch1.0+/../src/" . **However, it is strongly advised to use this default setting in this released project. Please refer to the Requirements section above.**
 2. More general and friendly code framework for RCDNet will be coming !
 
 ## Updating logs
