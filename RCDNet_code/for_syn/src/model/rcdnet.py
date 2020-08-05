@@ -95,13 +95,14 @@ class Mainnet(nn.Module):
          B0 = out_dual[:,:3,:,:]
          Z = out_dual[:,3:,:,:]
 
-         # 1st iteration: Updating M1-->B1
+         # 1st iteration: Updating B0-->M1
          ES = input - B0
          ECM = self.f(ES-self.tau)                                            #for sparse rain layer
          GM = F.conv_transpose2d(ECM, self.weight0/10, stride=1, padding=4)   # /10 for controlling the updating speed
          M = self.m_stage[0](GM)
          CM = F.conv2d(M, self.conv[1,:,:,:,:]/10, stride =1, padding = 4)    # self.conv[1,:,:,:,:]：rain kernel is inter-stage sharing
-        # 1st iteration: Updating M1-->B1
+       
+         # 1st iteration: Updating M1-->B1
          EB = input - CM
          EX = B0-EB
          GX = EX
