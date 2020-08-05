@@ -43,7 +43,7 @@ class Mainnet(nn.Module):
 
         # Rain kernel
         self.weight0 = nn.Parameter(data=kernel, requires_grad = True)  # used in initialization process
-        self.conv = self.make_weight(self.iter, kernel)                 # rain kernel is inter-stage sharing
+        self.conv = self.make_weight(self.iter, kernel)                 # rain kernel is inter-stage sharing. The true net parameter number is (#self.conv /self.iter)
 
         # filter for initializing B and Z
         self.w_z_f0 = w_x_conv.expand(self.num_Z, 3, -1, -1)
@@ -95,12 +95,13 @@ class Mainnet(nn.Module):
          B0 = out_dual[:,:3,:,:]
          Z = out_dual[:,3:,:,:]
 
-         # 1st iteration: Updating M1-->B1
+         # 1st iteration: Updating B0-->M1
          ES = input - B0
          ECM = self.f(ES-self.tau)                                            #for sparse rain layer
          GM = F.conv_transpose2d(ECM, self.weight0/10, stride=1, padding=4)   # /10 for controlling the updating speed
          M = self.m_stage[0](GM)
          CM = F.conv2d(M, self.conv[1,:,:,:,:]/10, stride =1, padding = 4)    # self.conv[1,:,:,:,:]：rain kernel is inter-stage sharing
+       
         # 1st iteration: Updating M1-->B1
          EB = input - CM
          EX = B0-EB
