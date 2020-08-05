@@ -43,7 +43,7 @@ class Mainnet(nn.Module):
 
         # Rain kernel
         self.weight0 = nn.Parameter(data=kernel, requires_grad = True)  # used in initialization process
-        self.conv = self.make_weight(self.iter, kernel)                 # rain kernel is inter-stage sharing
+        self.conv = self.make_weight(self.iter, kernel)                 # rain kernel is inter-stage sharing. The true net parameter number is (#self.conv /self.iter)
 
         # filter for initializing B and Z
         self.w_z_f0 = w_x_conv.expand(self.num_Z, 3, -1, -1)
