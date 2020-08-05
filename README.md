@@ -140,5 +140,7 @@ Code borrows from [JORDER_E](https://github.com/flyywh/JORDER-E-Deep-Image-Derai
 
 2020.6.28   Fix the bug in the file "init_rain_kernel.m"
 
+2020.8.5    Add comment about self.conv in the file "../src/model/rcdnet.py"
+
 ## Contact
 If you have any question, please feel free to concat Hong Wang (Email: hongwang01@stu.xjtu.edu.cn)
