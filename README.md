@@ -130,7 +130,7 @@ Code borrows from [JORDER_E](https://github.com/flyywh/JORDER-E-Deep-Image-Derai
 
 ## Friendly Tips
 1. If higher pytorch version (1.0.x, 1.1.x) is needed, please replace the files "dataloader.py"  and "trainer.py" in the folder "./RCDNet_code/../src/" with the  corresponding ones in  the folder "./pytorch1.0+/../src/" . **However, it is strongly advised to use this default setting in this released project. Please refer to the Requirements section above.**
-2. More general and friendly code framework for RCDNet will be coming !
+2. More general and friendly code framework for RCDNet will be coming ! **We are extending this work and the simplified training code for RCDNet and the extended version will be released together ! **
 
 ## Updating logs
 
