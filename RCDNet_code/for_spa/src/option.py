@@ -19,9 +19,9 @@ parser.add_argument('--seed', type=int, default=1,
                     help='random seed')
 
 # Data specifications
-parser.add_argument('--dir_data', type=str, default='../data',
+parser.add_argument('--dir_data', type=str, default='../data/',
                     help='dataset directory')
-parser.add_argument('--dir_demo', type=str, default='../test',
+parser.add_argument('--dir_demo', type=str, default='../test/',
                     help='demo image directory')
 parser.add_argument('--data_train', type=str, default='RainHeavy', #'DIV2K',
                     help='train dataset name')
