@@ -19,10 +19,11 @@ import cv2
 
 dataloaders = {}
 class Dataset(udata.Dataset):
-    def __init__(self, name, patchsize):
+    def __init__(self, name, args):
         super().__init__()
         self.dataset = name
-        self.patch_size = patchsize
+        self.args = args
+        self.patch_size = args.patch_size
         self.mat_files = open(self.dataset, 'r').readlines()
         self.file_num = len(self.mat_files)
         self.rand_state = RandomState(66)
@@ -56,11 +57,11 @@ class Dataset(udata.Dataset):
         B = img_pair[r: r + p_h, c: c + p_w]
         return O, B
 
-def get_dataloader(dataset_name, batchsize, patchsize):
-    dataset = Dataset(dataset_name, patchsize)
+def get_dataloader(dataset_name, args):
+    dataset = Dataset(dataset_name, args)
     if not dataset_name in dataloaders:
         dataloaders[dataset_name] = \
-            DataLoader(dataset, batch_size=batchsize,
+            DataLoader(dataset, batch_size=args.batch_size,
                        shuffle=True, num_workers=4, drop_last=True)
     return iter(dataloaders[dataset_name])
 
@@ -102,12 +103,12 @@ class Trainer():
         loss_B_all = 0
         loss_R_all=0
         cnt = 0
-        dt_train = get_dataloader(self.args.dir_data+'real_world.txt',self.args.batch_size, self.args.patch_size)
+        dt_train = get_dataloader(self.args.dir_data+'real_world.txt',self.args)
         for batch in range(1500):
             try:
                 batch_t = next(dt_train)
             except StopIteration:
-                dt_train = get_dataloader(self.args.dir_data+'real_world.txt',self.args.batch_size, self.args.patch_size)
+                dt_train = get_dataloader(self.args.dir_data+'real_world.txt',self.args)
                 batch_t = next(dt_train)
             lr, hr = batch_t['O'], batch_t['B']
             loss_Bs = 0
@@ -118,6 +119,7 @@ class Trainer():
             timer_model.tic()
             self.model.zero_grad()
             self.optimizer.zero_grad()
+            idx_scale = 0
             B0, ListB, ListR = self.model(lr, idx_scale)
             for j in range(self.S):
                 loss_Bs = float(loss_Bs) + 0.1*self.loss(ListB[j], hr)
@@ -142,7 +144,7 @@ class Trainer():
             if (batch + 1) % self.args.print_every == 0:
                 self.ckp.write_log('[{}/{}]\t{}\t{:.1f}+{:.1f}s'.format(
                     (batch + 1) * self.args.batch_size,
-                    len(self.loader_train.dataset),
+                    1500 * self.args.batch_size,
                     self.loss.display_loss(batch),
                     timer_model.release(),
                     timer_data.release()))
