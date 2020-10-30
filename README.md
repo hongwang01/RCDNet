@@ -147,7 +147,7 @@ Code borrows from [JORDER_E](https://github.com/flyywh/JORDER-E-Deep-Image-Derai
 
 2020.8.5    Add comment about self.conv in the file "../src/model/rcdnet.py"
 
-2020.10.20  Add the generalization description and fix the bugs about loading training data in the file "../for_spa/src/trainer.py"
+2020.10.30  Add the generalization description and fix the bugs about loading training data in the file "../for_spa/src/trainer.py"
 
 ## Contact
 If you have any question, please feel free to concat Hong Wang (Email: hongwang01@stu.xjtu.edu.cn)
