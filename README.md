@@ -109,6 +109,11 @@ $ cd ./RCDNet_code/for_spa/src/
 $ python main.py --data_test RainHeavyTest  --ext img --scale 2  --data_range 1-638492/1-1000 --pre_train ../experiment/RCDNet_spa/model/model_best.pt --model RCDNet --test_only --save_results --save RCDNet_test
 ```
 The derained results are saved in the folder "./for_spa/experiment/RCDNet_test/results/"
+
+### For Internet-Data(Generalization Evaluation)
+
+The test model is trained on Rain100H
+
 ## Pretrained Model
 See folder "Pretrained_model" 
 
@@ -141,6 +146,8 @@ Code borrows from [JORDER_E](https://github.com/flyywh/JORDER-E-Deep-Image-Derai
 2020.6.28   Fix the bug in the file "init_rain_kernel.m"
 
 2020.8.5    Add comment about self.conv in the file "../src/model/rcdnet.py"
+
+2020.10.20  Add the generalization description and fix the bugs about loading training data in the file "../for_spa/src/trainer.py"
 
 ## Contact
 If you have any question, please feel free to concat Hong Wang (Email: hongwang01@stu.xjtu.edu.cn)
