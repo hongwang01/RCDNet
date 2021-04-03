@@ -122,7 +122,8 @@ See folder "Pretrained_model"
 2) *for spa mode*l:  put the pretrained model into the folder "./for_spa/experiment/RCDNet_spa/model/",  and then the content is just like: "../for_spa/experiment/RCDNet_spa/model/model_best.pt"
 
 ## Derained Results
-If needed, please download from  [[NetDisk]](https://pan.baidu.com/s/1IU5hT8Vjcyf8wNYuQD5rPw)(pwd:e2xo) 
+If needed, please download from  [[NetDisk]](https://pan.baidu.com/s/1L-kRO-8uAtby3NsSCpPaAA)(pwd:czjo) 
+
 ## Comparison Demo on Rain100L
 ![Rain100l](https://github.com/hongwang01/RCDNet/blob/master/Rain100l.png)
 
@@ -148,6 +149,8 @@ Code borrows from [JORDER_E](https://github.com/flyywh/JORDER-E-Deep-Image-Derai
 2020.8.5    Add comment about self.conv in the file "../src/model/rcdnet.py"
 
 2020.10.30  Add the generalization description and fix the bugs about loading training data in the file "../for_spa/src/trainer.py"
+
+2021.04.03  Upate the Netdisk link for "deraining results"
 
 ## Contact
 If you have any question, please feel free to concat Hong Wang (Email: hongwang01@stu.xjtu.edu.cn)
