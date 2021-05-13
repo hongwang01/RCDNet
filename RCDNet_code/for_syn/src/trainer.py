@@ -148,7 +148,7 @@ class Trainer():
             self.ckp.save(self, epoch, is_best=(best[1][0] + 1 == epoch))
 
     def prepare(self, *args):
-        device = torch.device('cpu' if self.args.cpu else 'cuda:0')
+        device = torch.device('cpu' if self.args.cpu else 'cuda')
         def _prepare(tensor):
             if self.args.precision == 'half': tensor = tensor.half()
             return tensor.to(device)
