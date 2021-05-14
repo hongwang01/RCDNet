@@ -16,7 +16,7 @@ class RainHeavy(srdata.SRData):
 
     def _set_filesystem(self, dir_data):
         super(RainHeavy, self)._set_filesystem(dir_data)
-        self.apath = '../data/train/small/'
+        self.apath = '../data/rain100L/rain100L/train/small/'
 
         print(self.apath)
         self.dir_hr = os.path.join(self.apath, 'norain')

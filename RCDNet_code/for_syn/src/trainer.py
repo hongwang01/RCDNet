@@ -35,8 +35,9 @@ class Trainer():
     def train(self):
         self.scheduler.step()
         self.loss.step()
-        epoch = self.scheduler.last_epoch + 1
-        lr = self.scheduler.get_lr()[0]
+        epoch = self.scheduler.last_epoch #+ 1
+      #  lr = self.scheduler.get_lr()[0]
+        lr = self.optimizer.param_groups[0]['lr']
         self.ckp.write_log(
             '[Epoch {}]\tLearning rate: {:.2e}'.format(epoch, Decimal(lr))
         )
@@ -96,7 +97,7 @@ class Trainer():
         self.error_last = self.loss.log[-1, -1]
 
     def test(self):
-        epoch = self.scheduler.last_epoch + 1
+        epoch = self.scheduler.last_epoch# + 1
         self.ckp.write_log('\nEvaluation:')
         self.ckp.add_log(torch.zeros(1, len(self.scale)))
         self.model.eval()
@@ -147,7 +148,7 @@ class Trainer():
             self.ckp.save(self, epoch, is_best=(best[1][0] + 1 == epoch))
 
     def prepare(self, *args):
-        device = torch.device('cpu' if self.args.cpu else 'cuda:0')
+        device = torch.device('cpu' if self.args.cpu else 'cuda')
         def _prepare(tensor):
             if self.args.precision == 'half': tensor = tensor.half()
             return tensor.to(device)
@@ -159,5 +160,5 @@ class Trainer():
             self.test()
             return True
         else:
-            epoch = self.scheduler.last_epoch + 1
+            epoch = self.scheduler.last_epoch #+ 1
             return epoch >= self.args.epochs
