@@ -1,8 +1,8 @@
 # RCDNet: A Model-driven Deep Neural Network  for Single Image Rain Removal (CVPR2020)
  
-[Hong Wang](https://hongwang01.github.io/), Qi Xie, Qian Zhao, and [Deyu Meng](http://gr.xjtu.edu.cn/web/dymeng)  
+[Hong Wang](https://hongwang01.github.io/), Qi Xie, Qian Zhao, and [Deyu Meng](http://gr.xjtu.edu.cn/web/dymeng) [[PDF]](http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_A_Model-Driven_Deep_Neural_Network_for_Single_Image_Rain_Removal_CVPR_2020_paper.pdf) [[Supplementary Material]](http://openaccess.thecvf.com/content_CVPR_2020/supplemental/Wang_A_Model-Driven_Deep_CVPR_2020_supplemental.pdf) 
 
-[[PDF]](http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_A_Model-Driven_Deep_Neural_Network_for_Single_Image_Rain_Removal_CVPR_2020_paper.pdf) [[Supplementary Material]](http://openaccess.thecvf.com/content_CVPR_2020/supplemental/Wang_A_Model-Driven_Deep_CVPR_2020_supplemental.pdf) The extension of this work is released as [DRCDNet](https://github.com/hongwang01/DRCDNet) where we propose a dynamic rain kernel inference mechanism.
+The extension of this work is released as [DRCDNet](https://github.com/hongwang01/DRCDNet) where we propose a dynamic rain kernel inference mechanism.
 
 
 ![teaser](https://github.com/hongwang01/RCDNet/blob/master/teaser.gif)
