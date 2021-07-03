@@ -4,6 +4,9 @@
 
 [[PDF]](http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_A_Model-Driven_Deep_Neural_Network_for_Single_Image_Rain_Removal_CVPR_2020_paper.pdf) [[Supplementary Material]](http://openaccess.thecvf.com/content_CVPR_2020/supplemental/Wang_A_Model-Driven_Deep_CVPR_2020_supplemental.pdf)
 
+* The extension of this work is released as [DRCDNet](https://github.com/hongwang01/DRCDNet) where we propose a dynamic rain kernel inference mechanism.
+
+
 ![teaser](https://github.com/hongwang01/RCDNet/blob/master/teaser.gif)
 
 ## Abstract
@@ -136,7 +139,7 @@ Code borrows from [JORDER_E](https://github.com/flyywh/JORDER-E-Deep-Image-Derai
 
 ## Friendly Tips
 1. If higher pytorch version (1.0.x, 1.1.x) is needed, please replace the files "dataloader.py"  and "trainer.py" in the folder "./RCDNet_code/../src/" with the  corresponding ones in  the folder "./pytorch1.0+/../src/" . **However, it is strongly advised to use this default setting in this released project. Please refer to the Requirements section above.**
-2. More general and friendly code framework for RCDNet will be coming ! **We are extending this work and the simplified training code for RCDNet and the extended version will be released together !**
+2. We have extended this work to DRCDNet and the simplified training framework for RCDNet and DRCDNet will be released [Here](https://github.com/hongwang01/DRCDNet)!**
 
 ## Updating logs
 
@@ -151,6 +154,8 @@ Code borrows from [JORDER_E](https://github.com/flyywh/JORDER-E-Deep-Image-Derai
 2020.10.30  Add the generalization description and fix the bugs about loading training data in the file "../for_spa/src/trainer.py"
 
 2021.04.03  Upate the Netdisk link for "deraining results"
+
+2021.07.03  Add the project link about the extension of RCDNet
 
 ## Contact
 If you have any question, please feel free to concat Hong Wang (Email: hongwang01@stu.xjtu.edu.cn)
