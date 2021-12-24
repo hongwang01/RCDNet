@@ -2,8 +2,9 @@
  
 [Hong Wang](https://hongwang01.github.io/), Qi Xie, Qian Zhao, and [Deyu Meng](http://gr.xjtu.edu.cn/web/dymeng) [[PDF]](http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_A_Model-Driven_Deep_Neural_Network_for_Single_Image_Rain_Removal_CVPR_2020_paper.pdf) [[Supplementary Material]](http://openaccess.thecvf.com/content_CVPR_2020/supplemental/Wang_A_Model-Driven_Deep_CVPR_2020_supplemental.pdf) 
 
-The extension of this work is released as [DRCDNet](https://github.com/hongwang01/DRCDNet) where we propose a dynamic rain kernel inference mechanism.
+*The extension of this work is released as [DRCDNet](https://github.com/hongwang01/DRCDNet) where we propose a dynamic rain kernel inference mechanism.
 
+*The simple coding framework is released at https://github.com/hongwang01/RCDNet_simple, which has better compatibility with running environments.
 
 ![teaser](https://github.com/hongwang01/RCDNet/blob/master/teaser.gif)
 
@@ -137,7 +138,7 @@ Code borrows from [JORDER_E](https://github.com/flyywh/JORDER-E-Deep-Image-Derai
 
 ## Friendly Tips
 1. If higher pytorch version (1.0.x, 1.1.x) is needed, please replace the files "dataloader.py"  and "trainer.py" in the folder "./RCDNet_code/../src/" with the  corresponding ones in  the folder "./pytorch1.0+/../src/" . **However, it is strongly advised to use this default setting in this released project. Please refer to the Requirements section above.**
-2. We have extended this work to DRCDNet and the simplified training framework for RCDNet and DRCDNet will be released [Here](https://github.com/hongwang01/DRCDNet)!**
+2. We have extended this work to DRCDNet and the simplified training framework for RCDNet and DRCDNet is released at https://github.com/hongwang01/RCDNet_simple**
 
 ## Updating logs
 
