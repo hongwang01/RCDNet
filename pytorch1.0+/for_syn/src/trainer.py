@@ -62,8 +62,8 @@ class Trainer():
             self.optimizer.zero_grad()
             B0, ListB, ListR = self.model(lr, idx_scale)
             for j in range(self.S):
-                loss_Bs = float(loss_Bs) + 0.1*self.loss(ListB[j], hr)
-                loss_Rs = float(loss_Rs) + 0.1*self.loss(ListR[j], lr-hr)
+                loss_Bs = loss_Bs + 0.1*self.loss(ListB[j], hr)                    # 2022-09-19 fix the float bug
+                loss_Rs = loss_Rs + 0.1*self.loss(ListR[j], lr-hr)                 # 2022-09-19 fix the float bug
             loss_B = self.loss(ListB[-1], hr)
             loss_R = 0.9 * self.loss(ListR[-1], lr-hr)
             loss_B0 = 0.1* self.loss(B0, hr)
